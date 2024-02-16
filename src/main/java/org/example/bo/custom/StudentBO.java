@@ -7,10 +7,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 public interface StudentBO extends SuperBO {
-        //boolean deleteCustomer(String customerId) throws SQLException;
+        boolean deleteStudent(String studentId) throws SQLException;
         boolean saveStudent(StudentDTO dto) throws SQLException;
-        //boolean updateCustomer(CustomerDTO customerDTO) throws SQLException;
-        //CustomerDTO searchCustomer(String customerId) throws SQLException;
+        boolean updateStudent(StudentDTO studentDTO) throws SQLException;
+        StudentDTO searchStudent(String studentId) throws SQLException;
 
         //ArrayList<StudentDTO> getAllCustomer() throws SQLException;
 
